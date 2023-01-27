@@ -1,3 +1,209 @@
+/* EX 1 */
 .ex-1-square{
+    transition: background-color 1s ease;
+}
+
+.ex-1-square:hover{
+    background-color: red;
+}
+
+/* EX 2 */
+
+.ex-2-square{
+    transition: width 1s ease;
+}
+
+.ex-2-square:active{
+    width: 100%;
+}
+
+/* EX 3 */
+
+.ex-3-square{
+    transition: border-radius 1s ease;
+}
+
+.ex-3-square:hover{
+    border-radius: 50%;
+}
+
+/* EX 4 */
+
+.ex-4-square{
+    transition: opacity 1s ease;
+}
+
+.ex-4-square:hover{
+    opacity: 0;
+}
+
+/* EX 5 */
+
+
+.ex-5-square{
+    transition: transform .7s ease;
+}
+
+.ex-5-square:hover{
+    transform: scale(2);
+}   
+
+.ex-5-square:active{
+    transform: scale(0.5);
+}   
+
+/* EX 6 */
+
+.ex-6-img:hover{
+    filter: grayscale(1);
+}
+
+/* EX 7 */
+
+
+.ex-7-img{
+
+    transition: all 1s ease;
     
 }
+
+.ex-7-img:hover{
+    filter: sepia(1) blur(3px);
+}
+
+/* EX 8 */
+
+.ex-8-img{
+    transition: all 1s ease;
+}
+
+
+.ex-8-img:hover{
+    border-radius: 20px;
+    filter: grayscale(1) invert(1);
+
+}
+
+/* EX 9 */
+
+
+.ex-9-img{
+    transition: all .5s ease;
+}
+
+.ex-9-img:hover{
+    border-radius: 20px;
+    filter: grayscale(1) contrast(1);
+    transform: scale(1.2);
+}
+
+/* EX 10 */
+
+
+.ex-10-icon{
+    animation-name: ex-10-anim;
+    animation-duration: .7s;
+    animation-iteration-count: infinite;
+   animation-timing-function: linear;
+
+}
+
+@keyframes ex-10-anim {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+
+}
+
+/* EX 11 */
+
+.ex-11-icon{
+    animation-duration: .7s;
+   animation-timing-function: ease-in;
+}
+
+
+.ex-11-icon:hover{
+    animation-name: ex-11-anim;
+}
+
+
+@keyframes ex-11-anim {
+    0%{transform: rotate(0deg);}
+    25%{transform: rotate(90deg);}
+    50%{transform: rotate(270deg);}
+    100%{transform: rotate(0deg);}
+}
+
+
+/* EX 12 */
+
+.ex-12-top-white, .ex-12-bottom-white{
+    animation-duration: .7s;
+}
+
+.ex-12-button:hover .ex-12-top-white{
+    animation-name: ex-12-anim-top;
+}
+
+.ex-12-button:hover .ex-12-bottom-white{
+    animation-name: ex-12-anim-bottom;
+}
+
+
+@keyframes ex-12-anim-top {
+    0%{left: 10%;}
+    50%{left: 60%;}
+    100%{left: 10%;}
+}
+
+@keyframes ex-12-anim-bottom {
+    0%{right: 20%;}
+    50%{right: 60%;}
+    100%{right: 20%;}
+}
+
+/* EX 13 */
+
+.ex-13-top-white, .ex-13-bottom-white{
+    animation-duration: 2s;
+    animation-timing-function: ease;
+}
+
+.ex-13-button:hover .ex-13-top-white{
+    animation-name: ex-13-anim-top;
+}
+
+.ex-13-button:hover .ex-13-bottom-white{
+    animation-name: ex-13-anim-bottom;
+}
+
+
+@keyframes ex-13-anim-top {
+    0%{left: 10%; top: -10px;}
+    25%{left: 90%; top: -10px;}
+    50%{left: 90%; top: 100%;}
+    75%{left: -10%; top: 100%;}
+    85%{left: -10%; top: -10px;}
+    100%{left: 10%; top: -10px;}
+}
+
+@keyframes ex-13-anim-bottom {
+    0%{right: 20%; bottom: -10px;}
+    25%{right: 80%; bottom: -10px;}
+    50%{right: 80%; bottom: 100%;}
+    75%{right: -10%; bottom: 100%;}
+    85%{right: -10%; bottom: -10px;}
+    100%{right: 20%; bottom: -10px;}
+}
+
+/* @keyframes ex-13-anim-bottom {
+    0%{right: 20%;}
+    50%{right: 60%;}
+    100%{right: 20%;}
+} */
+
